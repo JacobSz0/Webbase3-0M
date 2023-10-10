@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Another simple example</title>
+  <link rel="stylesheet" type="text/css" href="cards.css">
+  <link rel="stylesheet" type="text/css" href="buttons.css">
+  <link rel="stylesheet" type="text/css" href="toggle.css">
+</head>
+<body>
+  <script>
+    // Function to check if the user is on a mobile device
+    function isMobileDevice() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    // Check if the user is on a mobile device
+    if (isMobileDevice()) {
+      document.body.innerHTML = "You are using a mobile device.";
+    } else {
+      document.body.innerHTML = "You are not using a mobile device.";
+    }
+  </script>
+  <div class="viewauto">
+    <div class="card-container">
+      <div class="card-border">
+        <div class="card">
+          <div>
+            <span>Username:</span>
+            <span>Username</span>
+          </div>
+          <div>
+            <span>Password:</span>
+            <span>Password</span>
+          </div>
+          <div>
+            <span>Device:</span>
+            <span>Device</span>
+          </div>
+          <div id="menu-items-0" class="menu-items">
+            <div>
+              <span>Full Name: </span>
+              <a>Sam Blam</a>
+            </div>
+            <div>
+              <span>Device Type: </span>
+              <a>50's toaster</a>
+            </div>
+            <div>
+              <span>Security Level: </span>
+              <span>Caravan! Run for your lives!</span>
+            </div>
+          </div>
+          <div class="button-padding">
+            <button onclick="toggleMenu(0)" class="glass-blue glass">+</button>
+            <button class="glass-purple glass">Edit</button>
+          </div>
+          <div class="button-padding">
+            <button class="glass-orange glass">Deprecate</button>
+            <button class="glass-red glass">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-container">
+      <div class="card-border">
+          <div class="card">
+            <div>
+              <span>Username:</span>
+              <span>Username</span>
+            </div>
+            <div>
+              <span>Password:</span>
+              <span>Password</span>
+            </div>
+            <div>
+              <span>Device:</span>
+              <span>Device</span>
+            </div>
+            <div id="menu-items-1" class="menu-items">
+              <div>
+                <span>Full Name: </span>
+                <a>Sam Blam</a>
+              </div>
+              <div>
+                <span>Device Type: </span>
+                <a>50's toaster</a>
+              </div>
+              <div>
+                <span>Security Level: </span>
+                <span>Caravan! Run for your lives!</span>
+              </div>
+            </div>
+            <div class="button-padding">
+              <button onclick="toggleMenu(1)" class="glass-blue glass">+</button>
+              <button class="glass-purple glass">Edit</button>
+            </div>
+            <div class="button-padding">
+              <button class="glass-orange glass">Deprecate</button>
+              <button class="glass-red glass">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="card-border">
+          <div class="card">
+            <div>
+              <span>Username:</span>
+              <span>Username</span>
+            </div>
+            <div>
+              <span>Password:</span>
+              <span>Password</span>
+            </div>
+            <div>
+              <span>Device:</span>
+              <span>Device</span>
+            </div>
+            <div id="menu-items-2" class="menu-items">
+              <div>
+                <span>Full Name: </span>
+                <a>Sam Blam</a>
+              </div>
+              <div>
+                <span>Device Type: </span>
+                <a>50's toaster</a>
+              </div>
+              <div>
+                <span>Security Level: </span>
+                <span>Caravan! Run for your lives!</span>
+              </div>
+            </div>
+            <div class="button-padding">
+              <button onclick="toggleMenu(2)" class="glass-blue glass">+</button>
+              <button class="glass-purple glass">Edit</button>
+            </div>
+            <div class="button-padding">
+              <button class="glass-orange glass">Deprecate</button>
+              <button class="glass-red glass">Delete</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const sampleData=[0,1,2]
+    const activeItems = Array(sampleData.length).fill(false);
+
+    function toggleMenu(index) {
+        activeItems[index] = !activeItems[index];
+        const menu = document.getElementById(`menu-items-${index}`);
+        const button = event.target;
+        if (activeItems[index]) {
+            menu.style.display = "block";
+            button.textContent = "-";
+        } else {
+            menu.style.display = "none";
+            button.textContent = "+";
+        }
+    }
+  </script>
+</body>
+</html>

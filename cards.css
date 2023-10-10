@@ -1,0 +1,52 @@
+.card-container {
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 4px;
+  width: 98%;
+  margin: auto
+}
+
+.card-border{
+  padding: 1px;
+  display: flex;
+  width: 96%;
+  margin: auto;
+}
+
+.card{
+  text-align: center;
+  font-size: 1.5em;
+  padding: 5px;
+  background-color: #f3f3f3;
+  width: 94%;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .viewauto{
+    width:100%;
+    height: auto;
+    margin: auto;
+  }
+}
+
+.form-item{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #e2e3f3;
+  /*box-shadow: 2px 2px rgba(97, 97, 97, 0.342);*/
+}
+
+.outer-form-item{
+  padding-top: 0px;
+  background-color: #e0e0eb;
+}
+
+.big-box{
+  width: 80%;
+  height: 50px;
+}
+.small-box{
+  width: 80%
+}

@@ -1,0 +1,92 @@
+.glass-red{
+	background-color: rgba(255, 0, 0, 0.484); /*for compatibility with older browsers*/
+	background-image: linear-gradient(rgba(166, 93, 93,rgba(242, 173, 173, 0.395)73, 173));
+}
+
+
+.glass-red:hover{
+	background: linear-gradient(rgb(119, 0, 0),rgb(255, 0, 0));
+	color: white;
+}
+
+.glass-orange{
+	background-color: rgba(156, 122, 49, 0.317); /*for compatibility with older browsers*/
+	background-image: linear-gradient(rgba(169, 132, 62, 0.402),rgba(244, 220, 141, 0.434));
+}
+
+
+.glass-orange:hover{
+	background: linear-gradient(rgb(145, 126, 0),rgb(255, 196, 0));
+	color: white;
+}
+
+.glass-purple{
+	background-color: rgba(156, 49, 124, 0.203); /*for compatibility with older browsers*/
+	background-image: linear-gradient(rgba(169, 62, 137, 0.53),rgb(241, 141, 244));
+}
+
+.glass-purple:hover{
+	background: linear-gradient(rgb(133, 0, 145),rgb(247, 0, 255));
+	color: white;
+}
+
+.glass-grey{
+	background-color: rgb(118, 118, 118); /*for compatibility with older browsers*/
+	background-image: linear-gradient(rgb(132, 131, 131),rgb(156, 156, 156));
+}
+
+.glass-grey:hover{
+	background: linear-gradient(rgb(67, 67, 67),rgb(120, 120, 120));
+}
+
+.glass-blue{
+	background-color: rgba(60, 49, 156, 0.457); /*for compatibility with older browsers*/
+	background-image: linear-gradient(rgba(66, 62, 169, 0.441),rgb(172, 141, 244));
+}
+
+.glass-blue:hover{
+	background: linear-gradient(rgb(36, 0, 145),rgb(76, 0, 255));
+	color: white;
+}
+
+.glass-green{
+	background-color: rgba(32, 152, 8, 0.484); /*for compatibility with older browsers*/
+	background-image: linear-gradient(rgba(166, 93, 93,rgba(112, 158, 119, 0.395)73, 173));
+}
+
+
+.glass-green:hover{
+	background: linear-gradient(rgb(0, 119, 10),rgb(0, 255, 17));
+	color: white;
+}
+
+.glass{
+  position: relative;
+	display: inline-block;
+	padding: 2px 5px;
+  text-decoration: none;
+	color: #000000;
+	font-size: 1em;
+	font-family: sans-serif;
+  font-weight: 100;
+  box-shadow: 0px 1px 4px -2px #252525;
+  text-shadow: 0px -1px #3e3d3d3c;
+}
+
+.glass:after{
+	content: '';
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	width: calc(100% - 2px);
+	height: 40%;
+	background: linear-gradient(rgba(255, 255, 255, 0.612), rgba(255,255,255,0.2));
+}
+
+.button-padding{
+  padding: 2px
+}
+
+.submit{
+	font-size: 20px;
+}

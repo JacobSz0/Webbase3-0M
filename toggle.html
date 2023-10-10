@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="toggle.css">
+</head>
+<body>
+  <div> <!-- Hamburger menu !-->
+		<img class="hamburger-menu" src="hamburger.png" alt="≡" width="30" height="30">
+  </div>
+
+  <ul class="hamburger-items">
+    <li><a>Home (Mobile)</a></li>
+    <li><a>Logins/Passwords</a></li>
+  </ul>
+	<p>This paragraph is a buncha useless words that culminates in a series of frustrating ideas</p>
+	<p>all for the overblown approach of testing whether a hamburger menu floats over text.</p>
+	<p>Speaking of which: Why did they call it a hamburger menu?</p>
+	<p>Was it because the person who made it forgot to get lunch?</p>
+	<p>Were they overworked? Was it a America just SLAPPING their label on everthing to do with the</p>
+	<p>internet becuase we have to be the best at everthing?</p>
+  <script>
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const hamburgerItems = document.querySelector('.hamburger-items');
+
+    hamburgerMenu.addEventListener('click', () => {
+      hamburgerItems.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
